@@ -5,7 +5,7 @@ from src.util.detector import detect_duplicates
 
 @pytest.mark.unit
 @patch("src.util.detector.parse", return_value=[])
-def test_detect_duplicates_1():
+def test_detect_duplicates_1(self, mock_parse):
     
     ret = detect_duplicates("")
 
