@@ -3,9 +3,11 @@ from unittest.mock import patch
 from src.util.detector import detect_duplicates
 # develop your test cases here
 
+
+
 @pytest.mark.unit
 @patch("src.util.detector.parse", return_value=[])
-def test_detect_duplicates_1(self, mock_parse):
+def test_detect_duplicates_1(mock_parse):
     
     ret = detect_duplicates("")
 
